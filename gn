@@ -1,0 +1,149 @@
+gg.copyText("Telegram :- @SAEEDJOR")
+function HOME()
+MOUDY = gg.choice({
+"LESS RECOIL",
+"ANTI SHAKE",
+"NO RECOIL",
+"AIMBOT",
+"SMALL CROSSHAIR",
+"HIT EFFECT",
+"WIDE VIEW",
+"NO GRASS",
+"BLACK BODY",
+"BLACK SKY",
+"EXIT",
+}, nil, "SCRIPT NO BYPASS")
+if MOUDY == nil then else
+if MOUDY==1 then F1() end
+if MOUDY==2 then F2() end
+if MOUDY==3 then F3() end
+if MOUDY==4 then F4() end
+if MOUDY==5 then F5() end
+if MOUDY==6 then F6() end
+if MOUDY==7 then F7() end
+if MOUDY==8 then F8() end
+if MOUDY==9 then F9() end
+if MOUDY==10 then F10() end
+if MOUDY==11 then Exit() end
+end 
+MOUDY = -1
+end
+
+function F1()
+function setvalue(address,flags,value)  local refinevalues={}  refinevalues[1]={}  refinevalues[1].address=address  refinevalues[1].flags=flags  refinevalues[1].value=value  gg.setValues(refinevalues)  end
+
+AR=gg.getRangesList('libUE4.so')[1].start
+MP=0x13B5184 
+setvalue(AR+MP,16,0)
+gg.alert[[DONE]]
+end
+
+function F2()
+function setvalue(address,flags,value)  local refinevalues={}  refinevalues[1]={}  refinevalues[1].address=address  refinevalues[1].flags=flags  refinevalues[1].value=value  gg.setValues(refinevalues)  end
+
+AR=gg.getRangesList('libUE4.so')[1].start
+MP=0x3C21938 
+setvalue(AR+MP,16,0)
+AR=gg.getRangesList('libUE4.so')[1].start
+MP=0x3B5D1D8 
+setvalue(AR+MP,16,0)
+gg.alert[[DONE]]
+end
+
+function F3()
+function setvalue(address,flags,value)  local refinevalues={}  refinevalues[1]={}  refinevalues[1].address=address  refinevalues[1].flags=flags  refinevalues[1].value=value  gg.setValues(refinevalues)  end
+
+AR=gg.getRangesList('libUE4.so')[1].start
+MP=0x13B5184 
+setvalue(AR+MP,16,0)
+AR=gg.getRangesList('libUE4.so')[1].start
+MP=0x3C21938 
+setvalue(AR+MP,16,0)
+AR=gg.getRangesList('libUE4.so')[1].start
+MP=0x3B5D1D8 
+setvalue(AR+MP,16,0)
+gg.alert[[DONE]]
+end
+
+function F4()
+function setvalue(address,flags,value)  local refinevalues={}  refinevalues[1]={}  refinevalues[1].address=address  refinevalues[1].flags=flags  refinevalues[1].value=value  gg.setValues(refinevalues)  end
+
+AR=gg.getRangesList('libUE4.so')[1].start
+MP=0x287728C 
+setvalue(AR+MP,16,0)
+gg.alert[[DONE]]
+end
+
+function F5()
+function setvalue(address,flags,value)  local refinevalues={}  refinevalues[1]={}  refinevalues[1].address=address  refinevalues[1].flags=flags  refinevalues[1].value=value  gg.setValues(refinevalues)  end
+
+AR=gg.getRangesList('libUE4.so')[1].start
+MP=0x1DF2868 
+setvalue(AR+MP,16,0)
+gg.alert[[DONE]]
+end
+
+function F6()
+function setvalue(address,flags,value)  local refinevalues={}  refinevalues[1]={}  refinevalues[1].address=address  refinevalues[1].flags=flags  refinevalues[1].value=value  gg.setValues(refinevalues)  end
+
+AR=gg.getRangesList('libUE4.so')[1].start
+MP=0x1b918c4 
+setvalue(AR+MP,16,0)
+gg.alert[[DONE]]
+end
+
+function F7()
+function setvalue(address,flags,value)  local refinevalues={}  refinevalues[1]={}  refinevalues[1].address=address  refinevalues[1].flags=flags  refinevalues[1].value=value  gg.setValues(refinevalues)  end
+
+AR=gg.getRangesList('libUE4.so')[1].start
+MP=0x3C24C14 
+setvalue(AR+MP,16,213)
+gg.alert[[DONE]]
+end
+
+function F8()
+function setvalue(address,flags,value)  local refinevalues={}  refinevalues[1]={}  refinevalues[1].address=address  refinevalues[1].flags=flags  refinevalues[1].value=value  gg.setValues(refinevalues)  end
+
+AR=gg.getRangesList('libUE4.so')[1].start
+MP=0x28456F8 
+setvalue(AR+MP,16,0)
+gg.alert[[DONE]]
+end
+
+function F9()
+function setvalue(address,flags,value)  local refinevalues={}  refinevalues[1]={}  refinevalues[1].address=address  refinevalues[1].flags=flags  refinevalues[1].value=value  gg.setValues(refinevalues)  end
+
+AR=gg.getRangesList('libUE4.so')[1].start
+MP=0x30ebc38 
+setvalue(AR+MP,16,0)
+gg.alert[[DONE]]
+end
+
+function F10()
+function setvalue(address,flags,value)  local refinevalues={}  refinevalues[1]={}  refinevalues[1].address=address  refinevalues[1].flags=flags  refinevalues[1].value=value  gg.setValues(refinevalues)  end
+
+
+
+so=gg.getRangesList('libUE4.so')[1].start
+py=0x3EE65EC 
+setvalue(so+py,16,-0.000006)
+gg.alert[[DONE]]
+end
+
+function Exit()
+print("Telegram :- @SAEEDJOR11")
+
+os.exit()
+gg.setVisible(true)
+end 
+
+while true do
+if gg.isVisible(true) then
+zcKHALED = 1
+gg.setVisible(false)
+end
+gg.clearResults()
+if zcKHALED == 1 then
+HOME()
+end
+end
