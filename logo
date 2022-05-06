@@ -1,0 +1,53 @@
+MIRIOWNER.Bypass315 = MemoryPatch::createWithHex("libUE4.so", 0x281C8F6C, "00 00 00 00");
+    MIRIOWNER.Bypass316 = MemoryPatch::createWithHex("libUE4.so", 0x27C7BE38, "00 00 00 00");
+    MIRIOWNER.Bypass317 = MemoryPatch::createWithHex("libUE4.so", 0x281C91A0, "00 00 00 00");
+    MIRIOWNER.Bypass318 = MemoryPatch::createWithHex("libUE4.so", 0x27C7BDFC, "00 00 00 00");
+    MIRIOWNER.Bypass319 = MemoryPatch::createWithHex("libUE4.so", 0x27E745C4, "00 00 00 00");
+    MIRIOWNER.Bypass320 = MemoryPatch::createWithHex("libUE4.so", 0x2839AFB0, "00 00 00 00");
+    MIRIOWNER.Bypass321 = MemoryPatch::createWithHex("libUE4.so", 0x2839AFA0, "00 00 00 00");
+    MIRIOWNER.Bypass322 = MemoryPatch::createWithHex("libUE4.so", 0x2667CF50, "00 00 00 00");
+    MIRIOWNER.Bypass323 = MemoryPatch::createWithHex("libUE4.so", 0x266780C4, "00 00 00 00");
+    MIRIOWNER.Bypass324 = MemoryPatch::createWithHex("libUE4.so", 0x1ADE238C, "00 00 00 00");
+    MIRIOWNER.Bypass325 = MemoryPatch::createWithHex("libUE4.so", 0x1ADE2434, "00 00 00 00");
+    MIRIOWNER.Bypass326 = MemoryPatch::createWithHex("libUE4.so", 0x1ADE24DC, "00 00 00 00");
+    MIRIOWNER.Bypass327 = MemoryPatch::createWithHex("libUE4.so", 0x1ADE2584, "00 00 00 00");
+    MIRIOWNER.Bypass328 = MemoryPatch::createWithHex("libUE4.so", 0x1ADE262C, "00 00 00 00");
+    MIRIOWNER.Bypass329 = MemoryPatch::createWithHex("libUE4.so", 0x1ADE2D64, "00 00 00 00");
+    MIRIOWNER.Bypassv330 = MemoryPatch::createWithHex("libUE4.so", 0x1ADE311C, "00 00 00 00");
+    MIRIOWNER.Bypass331 = MemoryPatch::createWithHex("libUE4.so", 0x1ADE3DCC, "00 00 00 00");
+    MIRIOWNER.Bypass332 = MemoryPatch::createWithHex("libUE4.so", 0x2667CF50, "00 00 00 00");
+    MIRIOWNER.Bypass333 = MemoryPatch::createWithHex("libUE4.so", 0x2667CF18, "00 00 00 00");
+    MIRIOWNER.Bypass334 = MemoryPatch::createWithHex("libUE4.so", 0x2667CEE0, "00 00 00 00");
+    MIRIOWNER.Bypass335 = MemoryPatch::createWithHex("libUE4.so", 0x2667CE38, "00 00 00 00");
+    MIRIOWNER.Bypass336 = MemoryPatch::createWithHex("libUE4.so", 0x2667CD58, "00 00 00 00");
+    MIRIOWNER.Bypass337 = MemoryPatch::createWithHex("libUE4.so", 0x2667CC40, "00 00 00 00");
+    MIRIOWNER.Bypass338 = MemoryPatch::createWithHex("libUE4.so", 0x2667CB28, "00 00 00 00");
+    MIRIOWNER.Bypass339 = MemoryPatch::createWithHex("libUE4.so", 0x2667C9D8, "00 00 00 00");
+    MIRIOWNER.Bypass340 = MemoryPatch::createWithHex("libUE4.so", 0x2667C8F8, "00 00 00 00");
+    MIRIOWNER.Bypass341 = MemoryPatch::createWithHex("libUE4.so", 0x26EBAFC0, "00 00 00 00");
+    MIRIOWNER.Bypass342 = MemoryPatch::createWithHex("libUE4.so", 0x26EBAFBC, "00 00 00 00");
+    MIRIOWNER.Bypass343 = MemoryPatch::createWithHex("libUE4.so", 0x25F96538, "00 00 00 00");
+    MIRIOWNER.Bypass344 = MemoryPatch::createWithHex("libUE4.so", 0x25F96490, "00 00 00 00");
+    MIRIOWNER.Bypass345 = MemoryPatch::createWithHex("libUE4.so", 0x272FEDD0, "00 00 00 00");
+    MIRIOWNER.Bypass346 = MemoryPatch::createWithHex("libUE4.so", 0x25D845C0, "00 00 00 00");
+    MIRIOWNER.Bypass347 = MemoryPatch::createWithHex("libUE4.so", 0x25DBD71C, "00 00 00 00");
+    MIRIOWNER.Bypass348 = MemoryPatch::createWithHex("libUE4.so", 0x2793D280, "00 00 00 00");
+    MIRIOWNER.Bypass349 = MemoryPatch::createWithHex("libUE4.so", 0x2793D168, "00 00 00 00");
+    MIRIOWNER.Bypass350 = MemoryPatch::createWithHex("libUE4.so", 0x2791ED68, "00 00 00 00");
+    MIRIOWNER.Bypass351 = MemoryPatch::createWithHex("libUE4.so", 0x26340E00, "00 00 00 00");
+    MIRIOWNER.Bypass352 = MemoryPatch::createWithHex("libUE4.so", 0x27C26AF0, "00 00 00 00");
+MIRIOWNER.Bypass353 = 
+MemoryPatch::createWithHex("libanogs.so", 0x21B708, "00 00 00 00");
+MIRIOWNER.Bypass354 = 
+MemoryPatch::createWithHex("libanogs.so", 0x21BA8C, "00 00 00 00");
+MIRIOWNER.Bypass355 = 
+MemoryPatch::createWithHex("libanogs.so", 0x21BB5C, "00 00 00 00");
+MIRIOWNER.Bypass356 = 
+MemoryPatch::createWithHex("libanogs.so", 0x21BD7C, "00 00 00 00");
+MIRIOWNER.Bypass357 = 
+MemoryPatch::createWithHex("libanogs.so", 0x21BE0C, "00 00 00 00");
+MIRIOWNER.Bypass358 = 
+MemoryPatch::createWithHex("libanogs.so", 0x21BE48, "00 00 00 00");
+MIRIOWNER.Bypass359 = 
+MemoryPatch::createWithHex("libanogs.so", 0x21C120, "00 00 00 00");
+
