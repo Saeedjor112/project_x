@@ -1,0 +1,77 @@
+==========================================
+//Credit : @SAEEDJOR11  |  FIND BY : @SAEEDJOR11
+
+Source Code :
+auto STPlayerController = Read(localPlayer + 0x29FC);/* @SAEEDJOR11*/
+if(STPlayerController)
+{/* @SAEEDJOR11*/
+    auto PlayerCameraManager = Read(STPlayerController + 0x360);/* @SAEEDJOR11*/
+     if (PlayerCameraManager) {/* @SAEEDJOR11*/
+        CameraCacheEntry CameraCache = Read<CameraCacheEntry>(PlayerCameraManager + 0x370);/* @SAEEDJOR11*/
+        Vector3 currentViewAngle = CameraCache.POV.Location;/* @SAEEDJOR11*/
+		
+        aimRotation = ToRotator(currentViewAngle, enemyHeadPos);/* @SAEEDJOR11*/
+		CameraCache.POV.Rotation = aimRotation;/* @SAEEDJOR11*/
+		Write<CameraCacheEntry>(PlayerCameraManager + 0x370, CameraCache);/* @SAEEDJOR11*/
+    }
+}
+
+//Credit : @SAEEDJOR11  |  FIND BY : @SAEEDJOR11
+==========================================
+//Credit : @SAEEDJOR11  |  FIND BY : @SAEEDJOR11
+
+ToRotator :
+Code :
+FRotator ToRotator(Vector3 local, Vector3 target) {/* @SAEEDJOR11*/
+    Vector3 rotation = local - target;/* @SAEEDJOR11*/
+ 
+    FRotator newViewAngle = {/* @SAEEDJOR11*/0};/* @SAEEDJOR11*/
+ 
+    float hyp = sqrt(rotation.X * rotation.X + rotation.Y * rotation.Y);/* @SAEEDJOR11*/
+ 
+    newViewAngle.Pitch = -atan(rotation.Z / hyp) * (180.f / (float) 3.14159265358979323846);/* @SAEEDJOR11*/
+    newViewAngle.Yaw = atan(rotation.Y / rotation.X) * (180.f / (float) 3.14159265358979323846);/* @SAEEDJOR11*/
+    newViewAngle.Roll = (float) 0.f;/* @SAEEDJOR11*/
+ 
+    if (rotation.X >= 0.f)
+        newViewAngle.Yaw += 180.0f;/* @SAEEDJOR11*/
+ 
+    return newViewAngle;/* @SAEEDJOR11*/
+}
+
+//Credit : @SAEEDJOR11  |  FIND BY : @SAEEDJOR11
+==========================================
+//Credit : @SAEEDJOR11  |  FIND BY : @SAEEDJOR11
+
+Structs :
+Code :
+struct FRotator {/* @SAEEDJOR11*/
+    float Pitch;/* @SAEEDJOR11*/
+    float Yaw;/* @SAEEDJOR11*/
+    float Roll;/* @SAEEDJOR11*/
+};/* @SAEEDJOR11*/
+ 
+struct MinimalViewInfo {/* @SAEEDJOR11*/
+    Vector3 Location;/* @SAEEDJOR11*/
+    Vector3 LocationLocalSpace;/* @SAEEDJOR11*/
+    FRotator Rotation;/* @SAEEDJOR11*/
+    float FOV;/* @SAEEDJOR11*/
+};/* @SAEEDJOR11*/
+ 
+struct CameraCacheEntry {/* @SAEEDJOR11*/
+    float TimeStamp;/* @SAEEDJOR11*/
+    char chunks[0xC];/* @SAEEDJOR11*/
+    MinimalViewInfo POV;/* @SAEEDJOR11*/
+};/* @SAEEDJOR11*/
+
+//Credit : @SAEEDJOR11  |  FIND BY : @SAEEDJOR11
+==========================================
+
+
+/*
+Credit : @SAEEDJOR11
+ Telegram : https://telegram.me/SAEEDJOR11
+FUCK YOU COPY PASTER
+GIVE CREDIT ELSE YOU HAVE MANY MORE FATHERS
+ANY HELP DM : @SAEEDJOR11
+*/
